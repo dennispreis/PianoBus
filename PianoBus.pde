@@ -19,7 +19,7 @@ void setup() {
   /* Initialize a MidiBus to the dedicated input and output
    * Search for needed name or index with "MidiBus.list();"
    */
-  MidiBus.list();
+  //MidiBus.list();
   piano = new MidiBus(this, 1, "Microsoft GS Wavetable Synth"); 
 }
 
