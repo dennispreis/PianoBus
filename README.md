@@ -15,7 +15,9 @@ The following table shows the connection between the arduino nano and the motor 
 
 |  GPIO-Pin  |  Driver-Pin   |  
 |:----------:|:-------------:|
-| 8  | IN1 |
-| 9  | IN2 |
-| 10 | IN3 | 
-| 11 | IN4 | 
+| 5V  | V+ | 
+| GND | GND | 
+| 8   | IN1 |
+| 9   | IN2 |
+| 10  | IN3 | 
+| 11  | IN4 | 
