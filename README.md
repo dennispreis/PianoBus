@@ -10,3 +10,11 @@ Components used in this project:
 * Motor driver: ULN2003
 * Piano: YAMAHA PSR-350
 * MIDI to USB cable
+
+
+|  GPIO-Pin  |  Driver-Pin   |  
+|:----------:|:-------------:|
+| 8  | IN1 |
+| 9  | IN2 |
+| 10 | IN3 | 
+| 11 | IN4 | 
