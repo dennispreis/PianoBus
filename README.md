@@ -11,6 +11,7 @@ Components used in this project:
 * Piano: YAMAHA PSR-350
 * MIDI to USB cable
 
+The following table shows the connection between the arduino nano and the motor driver.
 
 |  GPIO-Pin  |  Driver-Pin   |  
 |:----------:|:-------------:|
