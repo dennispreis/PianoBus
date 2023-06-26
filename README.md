@@ -5,7 +5,7 @@ PianoBus is a simple project which combines music with electronics. It shows how
 The program is written in processing (Version: 4.0b2) as java code and the software for the Arduino is written in the ArduinoIDE (Version: 1.8.16).
 
 Components used in this project:
-* Microctronoller: Arduino Nano (ATmega328P)
+* Microcontroller: Arduino Nano (ATmega328P)
 * Motor: 28BYJ-48 Stepper Motor
 * Motor driver: ULN2003
 * Piano: YAMAHA PSR-350
