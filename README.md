@@ -1,23 +1,39 @@
-# The PianoBus!
+# PianoBus
 
-PianoBus is a simple project which combines music with electronics. It shows how a microcontroller can be controlled by playing the piano. By pressing the piano keys, a signal is sent from the piano to the computer as a MIDI message which gets detected by a java code written in processing. With the help of the library "The MidiBus", the MIDI message is received after which a command is sent to the Arduino Nano using the processing serial class. This Command tells the microcontroller whether the motor should rotate or not. 
+**PianoBus** is a project that creatively combines music and electronics. It demonstrates how a musical instrument — in this case, a piano — can interact with electronic hardware through MIDI signals to control a physical motor via a microcontroller (Arduino Nano).
 
-The program is written in processing (Version: 4.0b2) as java code and the software for the Arduino is written in the ArduinoIDE (Version: 1.8.16).
+When a piano key is pressed, a MIDI message is sent to the computer and detected by a Java program written in Processing. Using the **The MidiBus** library, the MIDI message is received and translated into a serial command that is sent to the Arduino Nano. Depending on the key pressed, the motor connected to the Arduino rotates either clockwise or counterclockwise, or stops.
 
-Components used in this project:
-* Microcontroller: Arduino Nano (ATmega328P)
-* Motor: 28BYJ-48 Stepper Motor
-* Motor driver: ULN2003
-* Piano: YAMAHA PSR-350
-* MIDI to USB cable
+Piano -> MIDI data -> Processing -> Serial -> Arduino -> Motor
 
-The following table shows the connection between the arduino nano and the motor driver.
+## Project Highlights
 
-|  GPIO-Pin  |  Driver-Pin   |  
-|:----------:|:-------------:|
-| 5V  | V+ | 
-| GND | GND | 
-| 8   | IN1 |
-| 9   | IN2 |
-| 10  | IN3 | 
-| 11  | IN4 | 
+- Real-time MIDI-to-motor control
+- Integration of Processing and Arduino communication
+- Motor rotation direction based on specific piano keys
+- Easily expandable to visualize or control other actuators
+
+
+## Components Used
+
+- **Microcontroller**: Arduino Nano (ATmega328P)
+- **Motor**: 28BYJ-48 Stepper Motor
+- **Motor Driver**: ULN2003 Driver Board
+- **Piano**: YAMAHA PSR-350
+- **MIDI to USB Cable**
+
+
+## Wiring
+
+The following table shows the wiring connections between the Arduino Nano and the ULN2003 Motor Driver:
+
+| Arduino Nano Pin | Motor Driver Pin |
+|:----------------:|:----------------:|
+| 5V               | V+               |
+| GND              | GND              |
+| D8               | IN1              |
+| D9               | IN2              |
+| D10              | IN3              |
+| D11              | IN4              |
+
+
